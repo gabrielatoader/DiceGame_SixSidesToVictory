@@ -1,0 +1,17 @@
+/* container styles */
+.instructions-grid-container{
+    display:flex-column;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* image styles */
+
+.instructions-img{
+    width: 100vw;
+    max-height: 70vh;
+}

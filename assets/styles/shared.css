@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Hangyaboly";
+  src: url('../fonts/Hangyaboly/Hangyaboly.ttf')
+  format('truetype')
+}
+
+*{
+  font-family: 'Hangyaboly';
+  color: #44001a;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* text content styles */
+
+.page-title{
+  font-size: 13vmin;
+  text-transform: uppercase;
+}
+
+/* button styles */
+
+.btn{
+  font-size: 5vmin;
+  border: 2px solid #44001a;
+  border-radius: 10px 10px;
+  padding: 5px 10px;
+  height: fit-content;
+  background-color: #C3D0E9;
+}
+
+.btn-big{
+  font-size: 10vmin;
+  border: 2px solid #44001a;
+  border-radius: 20px 20px;
+  background-color: #C3D0E9;
+  height: fit-content;
+}
