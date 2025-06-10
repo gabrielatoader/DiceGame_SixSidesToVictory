@@ -6,6 +6,7 @@
     <title>First To Six</title>
     <link rel="stylesheet" href=".\assets\styles\shared.css">
     <link rel="stylesheet" href=".\assets\styles\game-page.css">
+    <script src=".\assets\scripts\index.js"></script>
   </head>
   <body>
     <div class="game-grid-container">
@@ -33,7 +34,7 @@
         <div><img src="assets\images\dice\gray_empty\D6_S5.png" id="p2_d6-s5" class="player-dice-img"/></div>
         <div><img src="assets\images\dice\gray_empty\D6_S6.png" id="p2_d6-s6" class="player-dice-img"/></div>
       </div>
-      <div id="roll_btn" class="btn-big">Roll!</div>
+      <div id="roll_btn" class="btn-big" onclick="rollDice()">Roll!</div>
       <div id="instructions_btn" class="btn">Instructions</div>
       <div id="reset_btn" class="btn">Reset Game</div>
     </div>
