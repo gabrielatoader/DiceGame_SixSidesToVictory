@@ -14,8 +14,28 @@ function rollDice(){
 	let gameDieSrc = gameDieImagePath + gameDieValue + imgExtension;
     
 	gameDie.setAttribute("src", gameDieSrc);
+	
+	changeCurrentPlayer();
 }
 
+function changeCurrentPlayer(){
+	if(currentPlayer == 1){
+		currentPlayer = 2;
+	} else{
+		currentPlayer = 1;
+	}
+	
+	setCurrentTurn();
+}
+
+
+function setCurrentTurn(){
+	if (currentPlayer == 0){
+		currentPlayer = 1;
+	}
+	
+	document.getElementById("turn-indicator").innerHTML = "Current turn: Player " + currentPlayer;
+}
 
 function setDieColor(die){
 	
