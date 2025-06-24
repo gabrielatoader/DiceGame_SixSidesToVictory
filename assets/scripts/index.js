@@ -18,6 +18,7 @@ function resetGame(){
 	
 	resetPlayerDice();
 	resetGameDice();
+	enableRollButton();
 	setCurrentTurn();
 }
 
@@ -42,21 +43,57 @@ function resetGameDice(){
 	gameDie.setAttribute("src", gameDieSrc);
 }
 
+function enableRollButton(){
+	let rollButton = document.getElementById("roll-btn")
+	rollButton.setAttribute("onclick", "rollDice()");
+	rollButton.setAttribute("class", "game-container__roll-btn btn-big");
+	
+}
+
+function disableRollButton(){
+	let rollButton = document.getElementById("roll-btn")
+	rollButton.removeAttribute("onclick");
+	rollButton.setAttribute("class", "game-container__roll-btn btn-big-disabled");
+}
+
 function rollDice(){
     let gameDieValue = 1 + Math.floor(Math.random() * 6);
     let gameDie = document.getElementById("game-die");
 	let gameDieImagePath = getDieImagePath();
 	let gameDieSrc = gameDieImagePath + gameDieValue + imgExtension;
 	
+	gameDie.setAttribute("src", gameDieSrc);
+	
 	if(currentPlayer == 1){
 		updatePlayerDice(player1DiceList, gameDieValue);
 	} else{
 		updatePlayerDice(player2DiceList, gameDieValue);
 	}
-    
-	gameDie.setAttribute("src", gameDieSrc);
 	
-	changeCurrentPlayer();
+	if (isWinner(currentPlayer)){
+			document.getElementById("turn-indicator").innerHTML = "Player " + currentPlayer + " won!";
+			disableRollButton();
+		}
+	else{
+		changeCurrentPlayer();		
+	}
+}
+
+function isWinner(currentPlayer){
+	
+	let playerDiceList;
+	
+	if(currentPlayer == 1){
+		playerDiceList = player1DiceList;
+	} else{
+		playerDiceList = player2DiceList;
+	}
+	
+	if(playerDiceList.includes(1) && playerDiceList.includes(2) && playerDiceList.includes(3) && playerDiceList.includes(4) && playerDiceList.includes(5) && playerDiceList.includes(6)){
+		return true;
+	}
+	
+	return false;
 }
 
 function updatePlayerDice(playerDiceList, gameDieValue){
