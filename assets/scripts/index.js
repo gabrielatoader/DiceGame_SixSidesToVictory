@@ -1,15 +1,38 @@
-function rollDice(){
-    const imgExtension = ".png";
-    const firstDieImagePath = "assets\\images\\dice\\red_filled\\D6_S";
-    const secondDieImagePath = "assets\\images\\dice\\blue_filled\\D6_S";
+const imgExtension = ".png";
+const defaultDieValue = "start";
+const defaultDicegameDiceImagePath = "assets/images/dice/gray_empty/";
+const player1DiceImagePath = "assets/images/dice/jade_filled/";
+const player2DiceImagePath = "assets/images/dice/jasper_filled/";
+const gameDice = document.getElementsByClassName("game-container__die");
 
-    var firstDieValue = 1 + Math.floor(Math.random() * 6);
-    var mainDice1 = document.getElementById("main-dice_1");
-    var firstDiceSrc = firstDieImagePath + firstDieValue + imgExtension;
-    mainDice1.setAttribute("src", firstDiceSrc);
+var currentPlayer = 0;
+
+function rollDice(){
+    let gameDieValue = 1 + Math.floor(Math.random() * 6);
+    let gameDie = document.getElementById("game-die");
+	let gameDieImagePath = getDieImagePath();
+	let gameDieSrc = gameDieImagePath + gameDieValue + imgExtension;
     
-    var secondDieValue = 1 + Math.floor(Math.random() * 6);
-    var mainDice2 = document.getElementById("main-dice_2");
-    var secondDiceSrc = secondDieImagePath + secondDieValue + imgExtension;
-    mainDice2.setAttribute("src", secondDiceSrc);
+	gameDie.setAttribute("src", gameDieSrc);
+}
+
+
+function setDieColor(die){
+	
+	let gameDiceImagePath = getDieImagePath();
+	let dieId = die.getAttribute('id');
+	let dieValue = getDieValue(die);
+	let newDieSrc = gameDiceImagePath + dieValue + imgExtension;
+	
+	die.setAttribute("src", newDieSrc);
+}
+
+function getDieImagePath(){
+	if (currentPlayer == 1) {
+		return player1DiceImagePath;
+	} else if (currentPlayer == 2) {
+		return player2DiceImagePath;
+	}
+	
+	return defaultDicegameDiceImagePath;
 }
