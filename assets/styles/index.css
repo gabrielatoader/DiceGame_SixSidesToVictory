@@ -1,0 +1,90 @@
+.game-container{
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"instructions-container reset-container"
+		"player1-container player2-container"
+		"turn-indicator turn-indicator"
+		"game-die game-die"
+		"roll-btn roll-btn";
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 2vmin;
+	place-self: center;
+	align-items: center;
+	max-width: 800px;
+	margin: 1%;
+	height: 90vh;
+}
+
+.game-container__title{
+	grid-area: header;
+	font-family: "Poppins-SemiBold";
+	/* font-size: 6vmin; */
+	padding: 1vmin;
+	text-transform: uppercase;
+	border: 2px solid #C2C2C2;
+	border-radius: 10px;
+}
+
+.game-container__instructions-btn{
+	grid-area: instructions-container;
+}
+
+.game-container__reset-game-btn{
+	grid-area: reset-container;
+}
+
+.game-container__player1{
+	grid-area: player1-container;
+}
+
+.game-container__player2{
+	grid-area: player2-container;
+}
+
+.game-container__turn-indicator{
+	grid-area: turn-indicator;
+	font-family: "Poppins-SemiBold";
+}
+
+.game-container__dice{
+	grid-area: game-die;
+	display: flex;
+	justify-content: space-between;
+}
+
+.game-container__roll-btn{
+	grid-area: roll-btn;
+}
+
+.player-container{
+	display: flex;
+	flex-direction: column;
+	border-width: 0.5vmin;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #C2C2C2;
+	padding: 1vmin;
+}
+
+.player-container__name{
+	padding: 1vmin;
+}
+
+.player-container__dice{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.player-container__die{
+	flex-basis: calc(100% / 3);
+}
+
+.player1__name{
+	color: #91CAAA;
+}
+
+.player2__name{
+	color: #DC907F;
+}
