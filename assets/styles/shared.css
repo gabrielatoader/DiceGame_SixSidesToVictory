@@ -1,38 +1,77 @@
+/* ---------------------- SHARED ---------------------- */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
 @font-face {
-  font-family: "Hangyaboly";
-  src: url('../fonts/Hangyaboly/Hangyaboly.ttf')
-  format('truetype')
+	font-family: "Poppins";
+	src: url('../fonts/Poppins/Poppins-Regular.ttf')
+	format('truetype')
+}
+
+@font-face {
+	font-family: "Poppins-SemiBold";
+	src: url('../fonts/Poppins/Poppins-SemiBold.ttf')
+	format('truetype')
 }
 
 *{
-  font-family: 'Hangyaboly';
-  color: #44001a;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* text content styles */
-
-.page-title{
-  font-size: 13vmin;
-  text-transform: uppercase;
+	font-family: 'Poppins';
+	font-size: 5vmin;
+	color: #000000;
+	white-space: nowrap;
+	text-align: center;
+	user-select: none;
 }
 
 /* button styles */
 
 .btn{
-  font-size: 5vmin;
-  border: 2px solid #44001a;
-  border-radius: 10px 10px;
-  padding: 5px 10px;
-  height: fit-content;
-  background-color: #C3D0E9;
+	background-color: #C2C2C2;
+	font-size: 3vmin;
+	border-radius: 10px;
+	padding: 1vmin;
 }
 
 .btn-big{
-  font-size: 10vmin;
-  border: 2px solid #44001a;
-  border-radius: 20px 20px;
-  background-color: #C3D0E9;
-  height: fit-content;
+	font-family: "Poppins-SemiBold";
+	background-color: #C2C2C2;
+	border-radius: 10px;
+	padding: 1vmin;
+}
+
+.btn-big:hover {
+	background-color: #D6D6D6;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.btn-big-disabled{
+	font-family: "Poppins-SemiBold";
+	color: red;
+	background-color: #D6D6D6;
+	border-radius: 10px;
+	padding: 1vmin;
+}
+
+.btn:hover {
+	background-color: #D6D6D6;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+/* image styles */
+.img{
+	width: 50%;
+}
+
+.img-big{
+	width:40%;
+	height: auto;
 }
