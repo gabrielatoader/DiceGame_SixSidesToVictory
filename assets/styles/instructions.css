@@ -1,17 +1,36 @@
 /* container styles */
-.instructions-grid-container{
-    display:flex-column;
+.instructions-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+/* text styles */
+.instructions-container__title{
+	font-family: "Poppins-SemiBold";
+	margin: 1vmin;
+	padding: 1vmin;
+	width: fit-content;
+	text-transform: uppercase;
+	border: 2px solid #C2C2C2;
+	border-radius: 10px;
 }
 
 /* image styles */
 
-.instructions-img{
-    width: 100vw;
-    max-height: 70vh;
+.instructions-container__image-container{
+	margin: 1vmin;
+	border: 2px solid #C2C2C2;
+	border-radius: 10px;
+	width: fit-content;
+}
+.instructions-container__image{
+    max-height: 75vh;
+	max-width: 100%;
+}
+
+.instructions-container__back-btn{
+	width: fit-content;
+	margin: 1vmin;
 }

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>First To Six - Instructions</title>
-    <link rel="stylesheet" href=".\assets\styles\shared.css">
-    <link rel="stylesheet" href=".\assets\styles\instructions.css">
-  </head>
-  <body>
-    <div class="instructions-grid-container">
-      <div class="page-title">Instructions</div>
-      <div class="img-container"><img src="assets\images\instructions.jpg" id="instructions-img" class="instructions-img"/></div>
-      <div class="btn-container">
-        <div class="btn" id="back_btn">Back</div>
-        <div class="btn" id="main_btn">Main Menu</div>
-      </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Instructions - Six Sides to Victory</title>
+		<link rel="stylesheet" href=".\assets\styles\shared.css">
+		<link rel="stylesheet" href=".\assets\styles\instructions.css">
+	</head>
+	<body>
+		<div class="instructions-container">
+		<div class="instructions-container__title">Instructions</div>
+		<div class="instructions-container__image-container">		
+			<picture>
+				<source media="(max-width: 425px)" srcset="assets/images/instructions_small.jpg">
+				<source media="(min-width: 426px)" srcset="assets/images/instructions.jpg">
+				<img src="assets/images/instructions.jpg" alt="Game instructions" class="instructions-container__image">
+			</picture>
+		</div>
+		<div class="instructions-container__back-btn btn" id="back_btn">Back</div>
+	</body>
 </html>
