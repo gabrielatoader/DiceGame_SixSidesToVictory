@@ -56,6 +56,10 @@ function disableRollButton(){
 	rollButton.setAttribute("class", "game-container__roll-btn btn-big-disabled");
 }
 
+function goToInstructionsPage(){
+	 window.location.href = "./instructions.html";
+}
+
 function rollDice(){
     let gameDieValue = 1 + Math.floor(Math.random() * 6);
     let gameDie = document.getElementById("game-die");
