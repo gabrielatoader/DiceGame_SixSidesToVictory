@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Six Sides to Victory</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Six Sides to Victory</title>
 	
-    <link rel="stylesheet" href="./assets/styles/shared.css">
-    <link rel="stylesheet" href="./assets/styles/index.css">
-    <script src="./assets/scripts/index.js"></script>
-  </head>
-  <body>
-	  <div class="game-container">
+		<link rel="stylesheet" href="./assets/styles/shared.css">
+		<link rel="stylesheet" href="./assets/styles/index.css">
+		<script src="./assets/scripts/index.js"></script>
+	</head>
+	<body>
+		<div class="game-container">
 		<div class="game-container__title">Six Sides to Victory</div>
-		<div class="game-container__instructions-btn btn">How to Play</div>
+		<div class="game-container__instructions-btn btn" onclick="goToInstructionsPage()">How to Play</div>
 		<div class="game-container__reset-game-btn btn" onclick="resetGame()">Reset Game</div>
 		<div class="game-container__player1 player-container">
 			<div class="player-container__name player1__name" id="player1-name">Player 1</div>
@@ -42,5 +42,5 @@
 		</div>
 		<div class="game-container__roll-btn btn-big" id="roll-btn" onclick="rollDice()">Roll the Die</div>
 	</div>
-  </body>
+	</body>
 </html>
