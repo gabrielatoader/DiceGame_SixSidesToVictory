@@ -5,10 +5,6 @@
 	padding: 0;
 }
 
-html, body {
-	height: 100%;
-}
-
 @font-face {
 	font-family: "Poppins";
 	src: url('../fonts/Poppins/Poppins-Regular.ttf')
@@ -35,14 +31,14 @@ html, body {
 .btn{
 	background-color: #C2C2C2;
 	font-size: 3vmin;
-	border-radius: 10px;
+	border-radius: 1vmin;
 	padding: 1vmin;
 }
 
 .btn-big{
 	font-family: "Poppins-SemiBold";
 	background-color: #C2C2C2;
-	border-radius: 10px;
+	border-radius: 1vmin;
 	padding: 1vmin;
 }
 
@@ -56,7 +52,7 @@ html, body {
 	font-family: "Poppins-SemiBold";
 	color: red;
 	background-color: #D6D6D6;
-	border-radius: 10px;
+	border-radius: 1vmin;
 	padding: 1vmin;
 }
 
@@ -68,10 +64,11 @@ html, body {
 
 /* image styles */
 .img{
-	width: 50%;
+	max-height: 5.5vmin;
+	width: auto;
 }
 
 .img-big{
-	width:40%;
-	height: auto;
+	max-height: 22vmin;
+	width: auto;
 }
