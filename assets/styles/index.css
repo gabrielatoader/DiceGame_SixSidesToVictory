@@ -8,23 +8,22 @@
 		"game-die game-die"
 		"roll-btn roll-btn";
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-rows: 11vmin 11vmin 22vmin 11vmin 22vmin 11vmin;
 	gap: 2vmin;
 	place-self: center;
 	align-items: center;
-	max-width: 800px;
-	margin: 1%;
-	height: 90vh;
+	min-width: 320px;
+	height: 100vmin;
+	margin: 2vmin;
 }
 
 .game-container__title{
 	grid-area: header;
 	font-family: "Poppins-SemiBold";
-	/* font-size: 6vmin; */
-	padding: 1vmin;
 	text-transform: uppercase;
-	border: 2px solid #C2C2C2;
-	border-radius: 10px;
+	border: 0.5vmin solid #C2C2C2;
+	border-radius: 2vmin;
+	padding: 1vmin;
 }
 
 .game-container__instructions-btn{
@@ -51,7 +50,7 @@
 .game-container__dice{
 	grid-area: game-die;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .game-container__roll-btn{
@@ -63,7 +62,7 @@
 	flex-direction: column;
 	border-width: 0.5vmin;
 	border-style: solid;
-	border-radius: 10px;
+	border-radius: 2vmin;
 	border-color: #C2C2C2;
 	padding: 1vmin;
 }
