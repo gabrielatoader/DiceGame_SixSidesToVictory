@@ -26,6 +26,16 @@
 	user-select: none;
 }
 
+/* player styles */
+
+.player1__name{
+	color: #91CAAA;
+}
+
+.player2__name{
+	color: #DC907F;
+}
+
 /* button styles */
 
 .btn{

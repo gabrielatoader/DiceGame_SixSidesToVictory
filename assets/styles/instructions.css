@@ -1,36 +1,63 @@
 /* container styles */
+
 .instructions-container{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	gap: 2vmin;
+	justify-content: space-evenly;
 	align-items: center;
+	min-width: 320px;
+	height: 100vmin;
+	margin: 2vmin;
+}
+
+.instructions-container__steps{
+	max-height: 66vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.instructions-container__step{
+	white-space: wrap;
+	text-align: left;
+	font-size: 3.5vmin;
+	align-self: stretch;
 }
 
 /* text styles */
+
 .instructions-container__title{
 	font-family: "Poppins-SemiBold";
-	margin: 1vmin;
-	padding: 1vmin;
-	width: fit-content;
 	text-transform: uppercase;
-	border: 2px solid #C2C2C2;
-	border-radius: 10px;
+	border: 0.5vmin solid #C2C2C2;
+	border-radius: 2vmin;
+	padding: 1vmin;
+}
+
+.instructions-container__step > span{
+	font-size: inherit;
 }
 
 /* image styles */
 
-.instructions-container__image-container{
-	margin: 1vmin;
-	border: 2px solid #C2C2C2;
-	border-radius: 10px;
-	width: fit-content;
+.instrunctions-inline-img{
+	height: 1em; 
+	width: auto; 
+	vertical-align: middle;
 }
-.instructions-container__image{
-    max-height: 75vh;
-	max-width: 100%;
+
+.center-child-image{
+	text-align: center;
+}
+
+.instructions-img{
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	height: 20vmin;
 }
 
 .instructions-container__back-btn{
 	width: fit-content;
-	margin: 1vmin;
 }

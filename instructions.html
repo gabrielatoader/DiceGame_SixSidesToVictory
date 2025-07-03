@@ -4,21 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Instructions - Six Sides to Victory</title>
-		
-		<link rel="stylesheet" href="./assets/styles/shared.css">
 		<link rel="stylesheet" href="./assets/styles/instructions.css">
+		<link rel="stylesheet" href="./assets/styles/shared.css">
 		<script src="./assets/scripts/instructions.js"></script>
 	</head>
 	<body>
 		<div class="instructions-container">
-		<div class="instructions-container__title">Instructions</div>
-		<div class="instructions-container__image-container">		
-			<picture>
-				<source media="(max-width: 425px)" srcset="assets/images/instructions_small.jpg">
-				<source media="(min-width: 426px)" srcset="assets/images/instructions.jpg">
-				<img src="assets/images/instructions.jpg" alt="Game instructions" class="instructions-container__image">
-			</picture>
-		</div>
-		<div class="instructions-container__back-btn btn" id="back_btn" onclick="goToGamePage()">Back</div>
+			<div class="instructions-container__title">Instructions</div>
+			<div class="instructions-container__steps">		
+				<div class="instructions-container__step">① Grab a friend who’s ready to play;</div>
+				<div class="instructions-container__step">② Decide who’s <span class="player1__name">Player 1</span> and who’s <span class="player2__name">Player 2</span>;</div>
+				<div class="instructions-container__step">③ <span class="player1__name">Player 1</span> starts by clicking <span><img src="./assets/images/roll-the-die.png" class="instrunctions-inline-img"/></span>;</div>
+				<div class="instructions-container__step">④ <span><img src="./assets/images/current-turn.png" class="instrunctions-inline-img"/></span> indicates who rolls next;</div>
+				<div class="instructions-container__step">⑤ View your progress in the player dice area:</div>
+				<div class="instructions-container__step center-child-image"><img src="./assets/images/player-progress.png" class="instructions-img"/></div>
+				<div class="instructions-container__step">⑥ First to roll all six numbers wins!</div>
+				<div class="instructions-container__step">⑦ Didn’t win? Smash <span><img src="./assets/images/reset-game.png" class="instrunctions-inline-img"/></span> and go again!</div>
+			</div>
+		<div class="instructions-container__back-btn btn-big" id="back_btn" onclick="goToGamePage()">Back</div>
 	</body>
 </html>
