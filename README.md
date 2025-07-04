@@ -125,7 +125,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+![License: Non-Commercial](https://img.shields.io/badge/license-Non--Commercial-lightgrey)
+
+This project is licensed for non-commercial use only. Any commercial use, distribution, or modification requires prior written permission from the author.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
