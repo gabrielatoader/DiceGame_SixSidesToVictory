@@ -138,6 +138,8 @@ This project is licensed for non-commercial use only. Any commercial use, distri
 
 Project Link: [https://github.com/gabrielatoader/DiceGame_SixSidesToVictory](https://github.com/gabrielatoader/DiceGame_SixSidesToVictory)
 
+📫 Lets connect on [LinkedIn](https://linkedin.com/in/gabriela-toader)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
